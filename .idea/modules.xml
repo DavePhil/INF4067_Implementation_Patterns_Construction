@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/INF4067_Implementation_Patterns_Construction.iml" filepath="$PROJECT_DIR$/.idea/INF4067_Implementation_Patterns_Construction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstract_factory_1/abstract_factory_1.iml" filepath="$PROJECT_DIR$/abstract_factory_1/abstract_factory_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory_method_1/factory_method_1.iml" filepath="$PROJECT_DIR$/factory_method_1/factory_method_1.iml" />
     </modules>
   </component>
