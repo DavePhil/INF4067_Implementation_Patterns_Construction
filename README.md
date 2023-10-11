@@ -7,7 +7,7 @@ Pour les fichiers et les branches sous la forme **_1, ils présentent la premiè
 sous la fome **_2 la seconde version. Chaque commit a une description(cliquer les 3 petits points pour 
 la lire).
 
-Dans le dossier models, on aura un fichier pdf contenant tous les modèles UML pour chaque
+Dans le dossier models(de la branche main), on aura un fichier pdf contenant tous les modèles UML pour chaque
 version d'implémentation.
 Le README de la branche main représente une description globale, et chaque sous branche a un 
 readme spécifique.
