@@ -8,7 +8,9 @@ sous la fome **_2 la seconde version. Chaque commit a une description(cliquer le
 la lire).
 
 Dans le dossier models, on aura un fichier pdf contenant tous les modèles UML pour chaque
-version d'implémentation
+version d'implémentation.
+Le README de la branche main représente une description globale, et chaque sous branche a un 
+readme spécifique.
 
 Chaque branche représente une version d'implémentation et un module, l'exécution se fait simplement en télechargeant 
 le module sur la branche et en exécutant le main correspondant.(Les tests seront néanmoins décrits pour chaque version plus bas).
@@ -31,14 +33,17 @@ Dans ce cas, nous avons une fabrique concrète qui aura une méthode de fabricat
 à l'intérieur de laquelle on fait un switch case ou alors des if pour connaitre quel objet il faut
 créer. Nous avons une classe produit abstraite qui est la classe dont les sous-classes concrètes 
 seront instanciées.
+
 L'implémentation se trouve sur la branche factory_method_1 pour la première version et 
 factory_method_2 pour la seconde version. Dans la première version, nous utilisons 2 produits et dans 
-la seconde, nous utilisons 3. 
+la seconde, nous utilisons 3. Pour les tests, télécharger le module sur sa branche et exécuter le main.
+
 #### L'utilisation d'une classe abstraite de fabrique(factory)
 Dans ce cas, nous avons une fabrique abstraite qui contient les signatures de la méthode de fabrication
 et des fabriques concrètes qui implémente la fabrication pour chaque type d'objets. Aussi.
 Nous avons une classe produit abstraite qui est la classe dont les sous-classes produits concrets
 seront instanciées.
+
 L'implémentation se trouve sur la branche factory_1 pour la première version et
 factory_2 pour la seconde version. Dans la première version, nous utilisons 2 produits et dans
 la seconde, nous utilisons 3.
@@ -61,9 +66,10 @@ en exécutant sa classe main.
 
 ## Singleton 
 Le modèle singleton nous permet de garantir qu'une classe ne possède qu'une seule instance et
-de fournir un accès global à celui-ci. On l'implémente en créant une classe contenant une méthode 
-qui crée une instance uniquement s'il n'en existe pas encore. Ici, le constructeur de la classe
-est privé pour s'assurer qu'une instance de la classe ne sera créée que par le contrôle de la méthode
+de fournir un accès global à celui-ci.
+
+On l'implémente en créant une classe contenant une méthode qui crée une instance uniquement
+s'il n'en existe pas encore. Ici, le constructeur de la classe est privé pour s'assurer qu'une instance de la classe ne sera créée que par le contrôle de la méthode
 de création qui est dans la classe.
 
 L'implémentation se trouve sur les branches singleton_1 et singleton_2 pour les versions.
@@ -73,7 +79,6 @@ aussi, écrire les méthodes getInstance fonction des constructeurs et quelque m
 Dans la deuxième version, il fallait rajouter un troisième attribut name, et un nouveau constructeur, 
 cette fois-ci à 3 paramètres. Écrire les méthodes getInstance fonction des constructeurs et ajouter
 des fonctions comme soustraction, etc.
-
 Pour les tests, il suffira de télécharger le module sur sa branche et d'exécuter le main. 
 
 
