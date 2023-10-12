@@ -12,15 +12,29 @@ version d'implémentation.
 Le README de la branche main représente une description globale, et chaque sous branche a un 
 readme spécifique.
 
-Chaque branche représente une version d'implémentation et un module, l'exécution se fait simplement en télechargeant 
-le module sur la branche et en exécutant le main correspondant.(Les tests seront néanmoins décrits pour chaque version plus bas).
+### Prérequis
+Avoir l'environnement Java correctement installé(JDK, JRE). Si ce n'est pas le cas, veuillez 
+suivre les étapes d'installation indiquées sur le site donc le lien est le suivant:
+https://www.java.com/fr/download/help/download_options_fr.html.
+
+### Tests
+Chaque branche représente une version d'implémentation et un module, l'exécution se fait simplement en téléchargeant
+le module sur la branche et/ou en exécutant le main correspondant.
+Pour exécuter:
+1. Ouvrir le projet dans un terminal
+2. Exécuter la commande cd src (Pour se placer dans le dossier contenant l'exécutable)
+3. (Optional) verifier avec la commande ls si le fichier main.java est bien présent.
+4. Exécuter la commande javac Main.java
+5. Enfin exécuter la commande java Main
+
+NB: Dans le pdf du dossier model, un résultat des différentes exécutions a été présenté.
 
 ## Introduction
 Dans le cadre de l'unité d'enseignement INF4067 intitulé : UML et Design Patterns, il nous a été 
 demandé dans cette première partie du cours d'implémenter des modèles de construction. Travail étant fait, 
 il sera question pour nous ici de présenter un résumé.
 
-### Pattern Factory
+### 1. Pattern Factory
 Il s'agit d'un patron de construction qui permet de créer les objets dont le type dépend du contexte.
 Il est généralement utilisable lorsque le client ne peut pas déterminer au préablable quel type d'objet il doit créer, 
 il ne peut ainsi déterminer ce type qu'à l'exécution. Aussi, il est utilisé lorsque à l’exécution, il est nécessaire de déterminer
@@ -28,7 +42,7 @@ dynamiquement quel objet d’un ensemble de sous-classes doit être instancié.
 
 Pour implémenter ce modèle deux méthodes sont possibles : 
 
-#### L'utilisation d'une methode de fabrique(abstract factory)
+#### 1.1. L'utilisation d'une methode de fabrique(abstract factory)
 Dans ce cas, nous avons une fabrique concrète qui aura une méthode de fabrication de l'objet 
 à l'intérieur de laquelle on fait un switch case ou alors des if pour connaitre quel objet il faut
 créer. Nous avons une classe produit abstraite qui est la classe dont les sous-classes concrètes 
@@ -36,9 +50,9 @@ seront instanciées.
 
 L'implémentation se trouve sur la branche factory_method_1 pour la première version et 
 factory_method_2 pour la seconde version. Dans la première version, nous utilisons 2 produits et dans 
-la seconde, nous utilisons 3. Pour les tests, télécharger le module sur sa branche et exécuter le main.
+la seconde, nous utilisons 3. 
 
-#### L'utilisation d'une classe abstraite de fabrique(factory)
+#### 1.2. L'utilisation d'une classe abstraite de fabrique(factory)
 Dans ce cas, nous avons une fabrique abstraite qui contient les signatures de la méthode de fabrication
 et des fabriques concrètes qui implémente la fabrication pour chaque type d'objets. Aussi.
 Nous avons une classe produit abstraite qui est la classe dont les sous-classes produits concrets
@@ -48,7 +62,7 @@ L'implémentation se trouve sur la branche factory_1 pour la première version e
 factory_2 pour la seconde version. Dans la première version, nous utilisons 2 produits et dans
 la seconde, nous utilisons 3.
 
-## Abstract factory
+## 2. Abstract factory
 Elle permet de créer des objets regroupés en famille sans avoir à connaitre leurs classes concrètes.
 On l'utilise lorsque le système est indépendant de la création des objets qu'il utilise ou alors 
 lorsque le système est capable de créer des objets d'une même famille.
@@ -60,11 +74,10 @@ Des classes concrètes représentant des familles de produits qui héritent des 
 
 L'implémentation se trouve sur les branches abstract_factory_1 et abstract_factory_2 pour les 2 versions.
 La première version concerne 2 familles de produits et la seconde 3 familles.
-Pour les tests, il sera question de tout simplement télécharger chaque branche et la tester
-en exécutant sa classe main.
 
 
-## Singleton 
+
+## 3. Singleton 
 Le modèle singleton nous permet de garantir qu'une classe ne possède qu'une seule instance et
 de fournir un accès global à celui-ci.
 
@@ -78,7 +91,18 @@ x, et y. Nous devions construire deux constructeurs un sans paramètre et un sec
 aussi, écrire les méthodes getInstance fonction des constructeurs et quelque méthodes comme moyenne, etc.
 Dans la deuxième version, il fallait rajouter un troisième attribut name, et un nouveau constructeur, 
 cette fois-ci à 3 paramètres. Écrire les méthodes getInstance fonction des constructeurs et ajouter
-des fonctions comme soustraction, etc.
-Pour les tests, il suffira de télécharger le module sur sa branche et d'exécuter le main. 
+des fonctions comme soustraction, etc. 
 
 
+## 4. Builder
+Le modèle Builder nous permet de créer des objets complexes à partir des objets sources. Il
+s'agit concrètement d'assembler plusieurs objets pour les monter et n'en faire qu'un.
+
+On l'implémente en créant une classe directeur, qui se charge d'appeler une classe concrète 
+Monteur, héritant d'une classe abstraite MonteurAbstrait qui définit les méthodes à utiliser
+la construction de l'objet.
+
+L'implémentation se trouve dans la branche builder_1 et builder_2 pour les deux versions.
+La première version représente l'implementation d'un builder de pizza ou on a deux Monteur 
+pizza fonction des ingrédients à y mettre. Dans la deuxième version, on ajoute une pizza, 
+la pizza locale.
