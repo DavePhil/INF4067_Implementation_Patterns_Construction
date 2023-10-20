@@ -21,11 +21,12 @@ https://www.java.com/fr/download/help/download_options_fr.html.
 Chaque branche représente une version d'implémentation et un module, l'exécution se fait simplement en téléchargeant
 le module sur la branche et/ou en exécutant le main correspondant.
 Pour exécuter:
+
 1. Ouvrir le projet dans un terminal
-2. Exécuter la commande cd src (Pour se placer dans le dossier contenant l'exécutable)
-3. (Optional) verifier avec la commande ls si le fichier main.java est bien présent.
-4. Exécuter la commande javac Main.java
-5. Enfin exécuter la commande java Main
+2. Exécuter la commande `cd src` (Pour se placer dans le dossier contenant l'exécutable)
+3. (Optional) verifier avec la commande `ls` si le fichier main.java est bien présent.
+4. Exécuter la commande `javac Main.java` 
+5. Enfin exécuter la commande `java Main`
 
 NB: Dans le pdf du dossier model, un résultat des différentes exécutions a été présenté.
 
