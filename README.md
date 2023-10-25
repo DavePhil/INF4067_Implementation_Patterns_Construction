@@ -4,7 +4,7 @@ Implémentation des modèles de constructions (Design patterns) en Java
 ## A savoir: 
 Tous nos devoirs sont stockés sur le repository : https://github.com/DavePhil/INF4067_Implementation_Patterns_Construction.
 Pour les fichiers et les branches sous la forme **_1, ils présentent la première version des implémentations et ceux 
-sous la fome **_2 la seconde version. Chaque commit a une description(cliquer les 3 petits points pour 
+sous la forme **_2 la seconde version. Chaque commit a une description(cliquer les 3 petits points pour 
 la lire).
 
 Dans le dossier models(de la branche main), on aura un fichier pdf contenant tous les modèles UML pour chaque
@@ -22,7 +22,7 @@ Chaque branche représente une version d'implémentation et un module, l'exécut
 le module sur la branche et/ou en exécutant le main correspondant.
 Pour exécuter:
 
-1. Ouvrir le projet dans un terminal
+1. Ouvrir le projet dans un terminal (Placer vous à la racine du projet)
 2. Exécuter la commande `cd src` (Pour se placer dans le dossier contenant l'exécutable)
 3. (Optional) verifier avec la commande `ls` si le fichier main.java est bien présent.
 4. Exécuter la commande `javac Main.java` 
